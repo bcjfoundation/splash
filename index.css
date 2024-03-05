@@ -67,6 +67,9 @@ body {
   font-weight: normal;
   background-color: var(--color-primary-tint-4);
   color: var(--color-neutral-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -105,12 +108,18 @@ p {
 }
 
 header {
-  padding: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header svg {
+  display: block;
+  margin: 0 auto;
 }
 
 main {
   flex-grow: 1;
-  padding: 2rem 1.25rem 4rem;
+  padding: 0 0 4rem;
 }
 
 footer {
@@ -140,6 +149,7 @@ header svg {
 .content {
   max-width: 65ch;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .content svg {
@@ -153,6 +163,8 @@ header svg {
 main svg {
   max-width: 26rem;
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -170,26 +182,9 @@ main svg {
 @media (min-width: 1024px) {
   h1 {
     font-size: 4rem;
-    max-width: 15ch;
-  }
-
-  .page {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 44rem auto;
-    min-height: 100vh;
   }
 
   main {
-    padding: 6rem 1.25rem;
-  }
-
-  header {
-    align-self: center;
-    justify-self: flex-end;
-  }
-
-  footer {
-    grid-column: span 2;
+    padding: 0 0 6rem;
   }
 }
