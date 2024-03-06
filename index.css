@@ -109,12 +109,6 @@ p {
 
 header {
   padding: 2rem 0;
-  text-align: center;
-}
-
-header svg {
-  display: block;
-  margin: 0 auto;
 }
 
 main {
@@ -177,7 +171,6 @@ header svg {
 main svg {
   max-width: 26rem;
   height: auto;
-  margin: 0 auto;
   display: block;
 }
 
