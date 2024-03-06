@@ -141,9 +141,19 @@ header svg {
   font-size: 1.25rem;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+.image {
+  aspect-ratio: 2 / 1;
+}
+
+.image img {
+  position: relative;
+  height: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  top: 1rem;
+  left: 1rem;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 10px;
 }
 
 .content {
@@ -154,6 +164,10 @@ header svg {
 
 .content svg {
   margin-bottom: 2.5rem;
+}
+
+.main-content {
+  width: 100%;
 }
 
 .email b {
@@ -186,5 +200,20 @@ main svg {
 
   main {
     padding: 0 0 6rem;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .image {
+    max-width: 700px;
+    width: 50%;
+    min-width: 400px;
+    position: relative;
+    align-self: flex-start;
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
 }
