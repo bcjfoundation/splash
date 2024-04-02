@@ -244,6 +244,11 @@ hr {
   }
 }
 @media (max-width: 1023px) {
+  .survey {
+    margin: 0 1.5rem 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
   .survey-page .image {
     display: none;
   }
