@@ -178,7 +178,8 @@ main svg {
   text-align: center;
   background-color: var(--color-pure-white);
   padding: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -196,6 +197,14 @@ main svg {
 }
 .survey-callout a:hover {
   background-color: var(--color-primary-tint-3);
+}
+
+hr {
+  margin: 2rem 0;
+  border-color: var(--color-primary-shade-1);
+  border-top: 0;
+  opacity: 0.25;
+  border-bottom-width: 3px;
 }
 
 @media (min-width: 768px) {
